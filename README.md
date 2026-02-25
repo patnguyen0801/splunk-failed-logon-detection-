@@ -8,3 +8,5 @@ Detect failed authentication attempts in Windows Security logs using Splunk.
 index=main sourcetype=wineventlog LogName=Security EventCode=4625
 | stats count by UserName
 | where count > 3
+
+## Screenshots
