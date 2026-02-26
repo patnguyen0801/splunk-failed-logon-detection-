@@ -9,4 +9,5 @@ index=main sourcetype=WinEventLog LogName=Security EventCode=4625
 | stats count by host | where count > 3
 ```
 
-## Screenshot
+## Detection Result
+![Failed Logon Detection](screenshots/failed-logon-detection.png)
